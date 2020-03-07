@@ -1,7 +1,7 @@
-export default function() {
+const fetchHook = (): void => {
   const originFetch = window.fetch
 
-  window.fetch = function(input: string | Request, configs = {}) {
+  window.fetch = (input: string | Request, configs = {}): Promise<Response> => {
     return new Promise((resolve, reject) => {
       originFetch(input, configs)
         .then((response: Response) => {
@@ -13,3 +13,5 @@ export default function() {
     })
   }
 }
+
+export default fetchHook
