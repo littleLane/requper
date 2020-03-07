@@ -1,6 +1,6 @@
 {
-  "name": "requper",
-  "version": "0.0.0",
+  "name": "@littleLane/requper",
+  "version": "0.0.1",
   "description": "",
   "keywords": [
     "requper",
@@ -10,6 +10,7 @@
     "fetch hook"
   ],
   "main": "dist/requper.umd.js",
+  "browser": "dist/requper.min.js",
   "module": "dist/requper.es5.js",
   "typings": "dist/types/requper.d.ts",
   "files": [
@@ -18,7 +19,7 @@
   "author": "littleLane <lzz857183384@163.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:littleLane/requper.git"
   },
   "license": "MIT",
   "engines": {
@@ -56,7 +57,7 @@
     "transform": {
       ".(ts|tsx)": "ts-jest"
     },
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "moduleFileExtensions": [
       "ts",
@@ -76,7 +77,7 @@
       }
     },
     "collectCoverageFrom": [
-      "src/*.{js,ts}"
+      "src/**/*.{js,ts}"
     ]
   },
   "commitlint": {
@@ -91,9 +92,11 @@
     "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@types/jest": "^25.1.3",
+    "@types/jsdom": "^16.1.0",
     "@types/node": "^13.7.4",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
+    "axios": "^0.19.2",
     "colors": "^1.4.0",
     "commitizen": "^4.0.3",
     "coveralls": "^3.0.9",
@@ -105,6 +108,7 @@
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "jest-config": "^25.1.0",
+    "jest-fetch-mock": "^3.0.2",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "prompt": "^1.0.0",
@@ -120,6 +124,7 @@
     "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
     "typedoc": "^0.16.10",
-    "typescript": "^3.8.2"
+    "typescript": "^3.8.2",
+    "xhr-mock": "^2.5.1"
   }
 }

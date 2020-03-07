@@ -1,9 +1,18 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',  // 解析器
+  // 解析器
+  parser: '@typescript-eslint/parser',
+
+  // 继承的规则 [扩展]
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended'
-  ], // 继承的规则 [扩展]
-  plugins: ['@typescript-eslint'], // 插件
-  rules: {}    // 规则
+  ],
+
+  // 插件
+  plugins: ['@typescript-eslint'],
+
+  // 规则
+  rules: {
+
+  }
 }
