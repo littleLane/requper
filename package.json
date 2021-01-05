@@ -96,7 +96,7 @@
     "@types/node": "^13.7.4",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "colors": "^1.4.0",
     "commitizen": "^4.0.3",
     "coveralls": "^3.0.9",
